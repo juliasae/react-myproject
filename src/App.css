@@ -1,0 +1,650 @@
+*{font-family:"Inter", "Hiragino sans W0", "Times", "Calibri", sans-serif;
+  box-sizing: border-box;
+}
+
+.container{
+  width: 100%;
+  height: auto;
+  background: #E5E8DB;
+}
+body{
+  background: #E5E8DB;
+  margin-top: 0px;
+  margin-left: 0px;
+  margin-right: 0px;
+  -webkit-print-color-adjust: exact;
+
+}
+
+.header{
+  display: flex;
+  justify-content: space-evenly;
+  width: 100%;
+  background: white;
+  height: 60px;
+  font-size: 1vw;
+  
+}
+.logo{
+  margin-left: 0;
+  margin-right: 0;
+}
+
+.hamburg{
+  display: none;
+}
+
+.menu{
+  display: flex;
+  list-style-type: none;
+  justify-content: space-evenly;
+  padding-bottom: 30px;
+  margin-right: 10px;
+
+}
+.header a{
+  color: black;
+  text-decoration: none;
+
+}
+
+h1{
+  margin-top: 30px;
+  margin-left: 20px;
+}
+
+<!--Hemsida, Köpa/Slutpris-->
+.sercher{
+  width: 100%;
+}
+.serchbar{
+  display: flex;
+  margin-left: 20px;
+  column-gap: 10px;
+}
+.img{
+  display: flex;
+  width: 90%;
+  margin: 20px;;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  cursor: pointer;
+}
+#img{
+  width: 280px
+}
+
+.img img:hover{
+  opacity: 65%; 
+}
+
+.button{
+  padding: 0px;
+  margin: 0px;
+  border: none; 
+}
+
+.button1{
+  background-color: transparent;
+  margin-top: 50px;
+  margin-left: 10px;
+  margin-bottom: 10px;
+  cursor: pointer;
+}
+
+.img-grid{
+  width: 100px;
+  display: block;
+  flex-basis: none;
+  margin: 20px;
+}
+
+@media only screen and (min-width:750px){
+  .img-grid{
+      flex-basis: 1.5%;
+  }
+}
+.rbp{
+  display: flex;
+  justify-content: space-between;
+  padding-right: 20px;
+  padding-right: 20px;
+  width: 100%;
+}
+.rbP{
+  display: flex;
+  justify-content:center;
+  padding-right: 20px;
+  padding-right: 20px;
+  width: 100%;
+}
+
+.rbp2{
+  display: none;
+  justify-content: space-around;
+  width: 100%;
+
+}
+
+.rum-bo-pris{
+  display: flex;
+  justify-content: space-around;
+  margin-top: 30px;
+}
+.multi-range-slider1{
+  display: flex;
+  width: 100%;
+  justify-content: flex-start;
+  column-gap: 30px;
+}
+.middle {
+position: relative;
+width: 100%;
+}
+
+.multi-range-slider{
+  display: flex;
+  flex-wrap:wrap;
+  justify-content: space-around;
+  column-gap: 30px;
+}
+
+.slider {
+position: relative;
+z-index: 1;
+height: 3px;
+margin: 20px;
+  padding-left: 150px;
+  padding-right: 150px;
+}
+.slider > .track {
+position: absolute;
+z-index: 1;
+left: 0;
+right: 0;
+top: 0;
+bottom: 0;
+border-radius: 10px;
+background-color:#C2C9AC;
+}
+.slider > .range {
+position: absolute;
+z-index: 2;
+left: 25%;
+right: 25%;
+top: 0;
+bottom: 0;
+border-radius: 5px;
+  background-color: black;
+}
+.slider > .thumb {
+position: absolute;
+z-index: 3;
+width: 20px;
+height: 20px;
+  background-color: #E5E8DB; 
+border-radius: 50%;
+  border: 3px black solid;
+box-shadow: 0 0 0 0 rgba(98,0,238,.1);
+transition: box-shadow .3s ease-in-out;
+}
+.slider > .thumb.left {
+left: 25%;
+transform: translate(-15px, -10px);
+}
+.slider > .thumb.right {
+right: 25%;
+transform: translate(15px, -10px);
+}
+.slider > .thumb.hover {
+box-shadow: 0 0 0 20px rgba(98,0,238,.1);
+}
+.slider > .thumb.active {
+box-shadow: 0 0 0 40px rgba(98,0,238,.2);
+}
+
+input[type=range] {
+position: absolute;
+pointer-events: none;
+-webkit-appearance: none;
+z-index: 2;
+height: 10px;
+width: 100%;
+opacity: 0;
+}
+.serch-keyword{
+  width: 100%;
+}
+.sercher{
+  margin: 20px;
+}
+.keywords{
+  margin: 20px;
+}
+
+.flow{
+  display: flex;
+  flex-wrap: wrap;
+  margin-left: 10px;
+  justify-content: space-around;
+  list-style-type: none;
+  margin: 30px;
+}
+
+<!--Sälja-->
+
+h2{
+  margin-top: 30px;
+  margin-left: 20px;
+  margin-bottom: 140px;
+}
+.boxen{
+  display: flex;
+  background:#E5E8DB;
+  margin-top: 50px;
+  margin-bottom: 100px;
+  justify-content: space-evenly;
+  list-style-type: none;
+  text-decoration: none;   
+}
+.boxen a{
+  text-decoration: none;
+  color: black;
+}
+.guide{
+  width: 25vw;
+  height: 25vw;
+  background: #C2C9AC;
+  text-align: center;
+  font-size: 1vw;
+  text-decoration: black;
+  padding: 140px; 
+}
+.annonsera{
+  width: 25vw;
+  height: 25vw;
+  background: #C2C9AC; 
+  text-align: center;
+  font-size: 1vw;
+  text-decoration: black;
+  padding: 140px;
+}
+
+
+<!--Guide till att sälja-->
+
+.info{
+  background:#E5E8DB;
+}
+
+.start{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 0px;
+}
+.list-of-object{
+  background: white;
+  padding-top: 30px;
+  margin-top: 30px;
+  column-gap: 10px;
+}
+
+.list-of-info{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background: white;
+}
+.icon1{
+  display: flex;
+  align-items: flex-start;
+  padding-left: 35px;
+}
+.icon2{
+  display: flex;
+  align-items: flex-start;
+
+}
+.icon3{
+  display: flex;
+  align-items: flex-start;
+  padding-left: 15px;
+}
+
+<!--Login-->
+
+.icon3{
+  background: white;
+}
+.window{
+  background: #E5E8DB;
+  height: 100vh;
+}
+
+.login-window{
+  
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 400px;
+  background: white;
+  border-radius: 10px;
+  align-items: center;
+  padding: 30px;
+}
+
+.login-window h2{
+  text-align: center;
+  padding: 0 0 20px 0;
+  border-bottom: 1px solid black;
+}
+
+.login-window p{
+  text-align: center;
+  padding: 0 0 20px 0;
+}
+
+.login-window form{
+  padding: 0 40px;
+  box-sizing: border-box;
+}
+
+form .txt_field{
+  position: relative;
+  border-bottom: 0.5px solid black;
+  margin: 30px 0;
+}
+.txt_field input{
+  width: 100%;
+  padding: 0 5px;
+  height: 40px;
+  font-size: 16px;
+  border: none;
+  background: none;
+  outline: none;
+}
+
+.txt_field label{
+  position: absolute;
+  top: 50%;
+  left: 5px;
+  color: black;
+  transform: translateY(-50%);
+  font-size: 16px;
+  pointer-events: none;
+}
+
+.txt_field span::before{
+  content: '';
+  position: absolute;
+  top: 40px;
+  left: 0px;
+  width: 100%;
+  height: 2px;
+  background: black;
+  transition: .5s;
+}
+
+.txt_field input:focus~ label, 
+.txt_field input:valid~ label{
+  top: -5px;
+  color: black;
+
+}
+.txt_field input:focus~ span::before, 
+.txt_field input:valid~ span::before{
+  width: 100%;
+
+}
+.pass{
+  margin: -5px 0 20px 5px;
+  color: black;
+  cursor: pointer;
+
+}
+
+.pass:hover{
+  text-decoration: underline;
+}
+
+input[type="submit"]{
+  width: 100%;
+  height: 50px;
+  border: 1px solid black;
+  background: #C2C9AC; 
+  border-radius: 20px;
+  font-size: 16px;
+  cursor: pointer;
+
+}
+input[type="submit"]:hover{
+  border-color: black;
+  transition: .5s;
+
+}
+
+<!--BYGGA NYTT-->
+
+.flow2{
+  display: flex;
+  flex-direction: column;
+}
+
+<!--SLUTPRIS__>
+.flow2{
+  background: white;
+}
+.rbp3{
+  display: none;
+  justify-content: space-between;
+  padding-right: 20px;
+  padding-right: 20px;
+  width: 100%;
+}
+  
+.multi-range-slider1{
+  display: flex;
+  width: 100%;
+  justify-content: space-around;
+  padding-left: 10px;
+}
+
+
+<!--HITTA MÄKLARE-->
+.tablee{
+  width: 100%;
+  margin: 100px;
+}
+table, th, td {
+  width: auto;
+  border: 1px solid;
+  margin: 50px;
+}
+.slider-outer{
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  margin-bottom: 50px;
+}
+
+.slider-inner{
+  position: relative;
+  width: 700px;
+  height: 400px;
+  overflow: hidden;
+  float: left;
+  padding: 3px;
+}
+.slider-inner img{
+  display: none;
+  width: 700px;
+  height: 400px;
+}
+.slider-inner img.active{
+  display: inline-block;
+}
+.prev,.next{
+  float: left;
+  margin-top: 200px;
+  cursor: pointer;
+}
+.prev{
+  position: relative;
+  margin-right: -25px;
+  z-index: 100;
+}
+.next{
+  position: relative;
+  margin-left: -25px;
+  z-index: 100;
+}
+
+#toggle{
+  display: flex;
+  justify-content: center;
+  padding: 10px;
+  width: 100%;
+  background-color: #D0D5BF;
+}
+
+#content{
+  display: none;
+  padding: 15px;
+  width: 100%;
+  height: 200px;
+  text-align: center;
+  font-size: 20px;   
+}
+.canv{
+  background-color: white;
+}
+
+#canvas{
+
+  width: 100%;
+}
+.rita{
+  display: flex;
+  justify-content: center;
+}
+
+
+.flow2{
+  background: white;
+}
+
+.footer{
+  display: -webkit-flex;
+  display: -moz-flex;
+  display: -ms-flex;
+  display: flex;
+  flex-flow: row wrap;
+  padding: 30px;
+  color: blue;
+  background: white;
+}
+.footer > *{
+  flex: 1 100%;
+}
+.l-footer{
+  margin-top: 2em ;
+  margin-right: 1.25em;
+  margin-bottom: 2em;
+}
+.footer h2{
+  font-weight: 900;
+  font-size: 16px;
+}
+.footer ul{
+  list-style: none;
+  padding-left: 0;
+}
+.footer li{
+  line-height: 2em;
+}
+.r-footer{
+  display: -webkit-flex;
+  display: -moz-flex;
+  display: -ms-flex;
+  display: -o-flex;
+  display: flex;
+  flex-flow: row wrap;
+}
+.r-footer > *{
+  flex: 1 50%;
+  margin-right: 1.25em;
+}
+.box a{
+  text-decoration: none;
+}
+.box1 a{
+  text-decoration: none;
+}
+.box1{
+  padding-top: 70px;
+}
+.b-footer{
+  text-align: center;
+  color: grey;
+  padding-top: 50px;
+}
+.l-footer p{
+  padding-right: 20%;
+  color: grey;
+}
+@media screen and (min-width:700px){
+  .r-footer > *{
+      flex: 1;
+  }
+  .socials{
+      flex-grow: 1;
+  }
+  .l-footer{
+      flex: 1 0px;
+  }
+  .r-footer{
+      flex: 2;
+  }
+}
+
+@media screen and (max-width:700px){
+  .hamburg{
+      display: flex;
+      margin-top: 10px;
+  }
+
+  .menu{
+      display: none;
+  }
+
+  .logo{
+      margin-left: 30px;
+      justify-content: left;
+  }
+
+  .flow{
+      justify-content: center;
+  }
+  .rbp{
+      display: none;
+  }
+  .rbP{
+      display: none;
+  }
+  .rbp2{
+      display: flex;
+  }
+  .rbp3{
+      display: flex;
+      justify-content:center;
+  }
+  .multi-range-slider{
+      flex-wrap: wrap;
+  }
+  .boxen{
+      flex-wrap: wrap;
+      padding: 20px;
+  }
+}
